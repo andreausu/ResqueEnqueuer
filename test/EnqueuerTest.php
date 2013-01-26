@@ -42,4 +42,12 @@ class EnqueuerTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertArrayHasKey('test_param2', json_decode($this->keyContent, true)['args']);
     }
+
+    public function tearDown()
+    {
+        try {
+            $this->redis->close();
+        } catch (\RedisException $e) {
+        }
+    }
 }
