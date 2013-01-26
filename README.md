@@ -42,9 +42,12 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use ResqueEnqueuer\Enqueuer;
 
-$enq = new Enqueuer(); // $redisHost, $redisPort, $redisDb, $resqueBaseKeyName
-
-$enq->enqueue('queue_name', 'job_name', array('id_user' => 100, 'other_param' => 'foo'));
+try {
+    $enq = new Enqueuer(); // $redisHost, $redisPort, $redisDb, $resqueBaseKeyName
+    $enq->enqueue('queue_name', 'job_name', array('id_user' => 100, 'other_param' => 'foo'));
+} catch (RedisException $e) {
+    echo $e->getMessage() . PHP_EOL;
+}
 ```
 
 Testing
