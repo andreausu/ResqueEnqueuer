@@ -15,6 +15,9 @@
         "php": ">=5.3.0",
         "ext-redis": "*"
     },
+    "require-dev": {
+        "phpunit/phpunit": "@stable"
+    },
     "autoload": {
         "psr-0": {
             "ResqueEnqueuer": "src/"
