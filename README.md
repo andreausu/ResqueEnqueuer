@@ -40,7 +40,7 @@ How to use
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
-use ResqueEnqueuer\Enqueue;
+use ResqueEnqueuer\Enqueuer;
 
 $enq = new Enqueuer(); // $redisHost, $redisPort, $redisDb, $resqueBaseKeyName
 
