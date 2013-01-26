@@ -1,5 +1,5 @@
 <?php
-namespace Italiansubs\Resque;
+namespace ResqueEnqueuer;
 
 class Enqueuer
 {
