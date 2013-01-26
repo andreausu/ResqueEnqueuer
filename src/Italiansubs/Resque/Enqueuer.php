@@ -61,7 +61,7 @@ class Enqueuer
     {
         try {
             $this->redis->close();
-        } catch (RedisException $e) {
+        } catch (\RedisException $e) {
         }
     }
 }
