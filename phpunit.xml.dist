@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit colors="true"
+        stopOnFailure="true">
+    <testsuites>
+        <testsuite name="ResqueEnqueuer Test Suite">
+            <directory>test/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">src/ResqueEnqueuer/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
+
