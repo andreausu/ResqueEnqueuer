@@ -3,7 +3,6 @@
     "description": "A library that lets you enqueue jobs in Resque from a PHP application",
     "keywords": ["resque", "php"],
     "homepage": "http://andreausu.github.com/ResqueEnqueuer",
-    "version": "0.1.3",
     "license": "MIT",
     "authors": [
         {
